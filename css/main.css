@@ -15,6 +15,13 @@ body {
     max-width: 800px;
     margin: 2rem auto;
 }
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px #2B2D42;
+    opacity: 80%;
+}
 
 a {
     color: #EF233C;
@@ -44,3 +51,64 @@ button[type="reset"] {
 }
 
 
+
+/********FORMULAIRE********/
+form {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    border: 6px solid #2B2D42;
+    margin: 2em auto 80px;
+    max-width: 450px;
+    min-width: 300px;
+
+}
+
+form ul {
+    padding: 0;
+    margin: 0;
+}
+
+form li {
+    list-style: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+label input + span {
+    font-weight: normal;
+}
+
+
+/*quand on presse sur le bouton, il devient gras*/
+
+label input:checked + span {
+    font-weight: bold;
+}
+
+select {
+    border: 2px solid #2B2D42;
+    padding: 1em;
+    width: 100%;
+    color: inherit;
+    font-size: inherit;
+    background-color: white;
+}
+
+fieldset {
+    border: 2px solid #2B2D42;
+    padding: 1em;
+    margin: 1em 0 2em;
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
