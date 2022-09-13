@@ -3,18 +3,23 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
     font-size: 100%;
     font-weight: 400;
     color: #2B2D42;
     background-color: #EDF2F4;
+    background-image: url("../img/backgounds/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
-body {
-    max-width: 800px;
-    margin: 2rem auto;
-}
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -95,13 +100,19 @@ select,
 input[type="text"]
 input[type="email"]
 input[type="password"] {
-
     border: 2px solid #2B2D42;
     padding: 1em;
     width: 100%;
     color: inherit;
     font-size: inherit;
     background-color: white;
+}
+
+input[type="email"]:invalid {
+    border-color: #D90429;
+}
+input[type="email"]:valid {
+    border-color: lightgreen;
 }
 
 fieldset {
