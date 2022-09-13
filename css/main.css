@@ -70,6 +70,7 @@ form ul {
 
 form li {
     list-style: none;
+    margin-bottom: 1.5em;
 }
 
 label {
@@ -90,7 +91,11 @@ label input:checked + span {
     font-weight: bold;
 }
 
-select {
+select,
+input[type="text"]
+input[type="email"]
+input[type="password"] {
+
     border: 2px solid #2B2D42;
     padding: 1em;
     width: 100%;
@@ -102,8 +107,12 @@ select {
 fieldset {
     border: 2px solid #2B2D42;
     padding: 1em;
-    margin: 1em 0 2em;
 
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5em;
 }
 
 .input-group {
@@ -111,4 +120,13 @@ fieldset {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1em;
+}
+
+button[type="submit"] {
+    margin-right: 1em;
+
+}
+button[type="submit"] + a {
+    color: #2B2D42;
+
 }
